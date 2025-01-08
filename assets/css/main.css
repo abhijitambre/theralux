@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: Area Normal;
-  --heading-font: Area Normal;
-  --nav-font: Area Normal;
+  --default-font: "area-normal", sans-serif;
+  --heading-font: "area-normal", sans-serif;
+  --nav-font: "area-normal", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -813,9 +813,9 @@ section,
 }
 .section-title h4 {
   color: #313131;
-  font-family: Area Normal;
-  font-size: 13px;
-  font-weight: 600;
+  font-family: "area-normal", sans-serif;;
+  font-size: 10px;
+  font-weight: 400;
   line-height: 14.66px;
   letter-spacing: 2px;
   text-align: left;
@@ -827,9 +827,8 @@ section,
   color: var(--heading-color);
   margin: 0;
   margin-bottom: 1rem;
-
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--heading-font);
 }
 
@@ -837,6 +836,53 @@ section,
   color: var(--accent-color);
 }
 
+
+.d-grid{
+  display: grid;
+} 
+.grid-1-1{
+  grid-template-columns: 1fr 1fr;
+}
+.grid-2-1{
+  grid-template-columns: 2fr 1fr;
+}
+.grid-1-2{
+  grid-template-columns: 1fr 2fr;
+}
+.gap-10{
+  gap: 10px;
+}
+.gap-30{
+  gap: 30px;
+}
+.gap-40{
+  gap: 40px;
+}
+.gap-50{
+  gap: 50px;
+}
+.gap-100{
+  gap: 100px;
+}
+.text-justify{
+  text-align: justify;
+}
+.width-max-content{
+  width: max-content;
+}
+.width-auto{
+  width: auto;
+}
+.text-red{
+  color: #952020;
+}
+.px-20{
+  padding: 0 20px;
+}
+.border-width-2{
+  border-width: 2px;
+  opacity: 1;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1087,7 +1133,7 @@ section,
   right: -11%;
   position: absolute;
   background: #bab6b1;
-  top: 30%;
+  top: 17px;
 }
 .line::before {
   content: "";
@@ -1096,7 +1142,14 @@ section,
   left: -11%;
   position: absolute;
   background: #bab6b1;
-  top: 30%;
+  top: 17px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+
+.text-right {
+  text-align: right;
 }
 /*--------------------------------------------------------------
 # Features Section
@@ -1168,7 +1221,6 @@ section,
   transition: 0.3s;
   border-radius: 5px;
 }
-
 .services .service-item .icon {
   font-size: 36px;
   padding: 20px 20px;
@@ -1706,9 +1758,8 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team .team-member {
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   border-radius: 5px;
   transition: 0.3s;
 }
@@ -1750,7 +1801,7 @@ section,
   margin: 15px 12px;
   display: block;
   line-height: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .team .team-member .social a:hover {
@@ -1762,7 +1813,7 @@ section,
 }
 
 .team .team-member .member-info {
-  padding: 10px 15px 20px 15px;
+  padding: 10px 0px 20px;
 }
 
 .team .team-member .member-info h4 {
@@ -1786,10 +1837,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.team .team-member:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-}
+
 
 .team .team-member:hover .social {
   right: 8px;
