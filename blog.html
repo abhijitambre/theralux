@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4efe6; /* Light beige background */
+            color: #1a1a1a; /* Dark text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .line {
+            flex: 1;
+            height: 1px;
+            background-color: #c4c4c4; /* Light gray line */
+        }
+
+        .text {
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        .text h5 {
+            font-size: 1rem;
+            margin: 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line"></div>
+        <div class="text">
+            <h5>Venerable and Versatile</h5>
+        </div>
+        <div class="line"></div>
+        <div class="text">
+            <h5 class="text-uppercase">a PLACE where timeless values meet innovative wellness, all rooted in integrity and excellence.</h5>
+        </div>
+        <div class="line"></div>
+    </div>
+</body>
+</html>
